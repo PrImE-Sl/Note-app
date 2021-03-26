@@ -1,0 +1,19 @@
+import axios from 'axios'
+
+const api = axios.create({ baseURL: 'http://localhost:3000/api', })
+
+export const insertNote = payload => api.post(`/notes`, payload)
+export const getAllNotes = () => api.get(`/notes`)
+export const updateNoteById = (id, payload) => api.put(`/notes/${id}`, payload)
+export const deleteNoteById = id => api.delete(`/notes/${id}`)
+export const getNoteById = id => api.get(`/notes/${id}`)
+
+const apis = {
+    insertNote: insertNote,
+    getAllNotes: getAllNotes,
+    updateNoteById: updateNoteById,
+    deleteNoteById: deleteNoteById,
+    getNoteById: getNoteById,
+}
+
+export default apis

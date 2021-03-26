@@ -1,0 +1,34 @@
+.Wrapper {
+	margin: 0 100px;
+}
+
+.Label {
+	margin: 5px;
+	font-weight: 500;
+}
+
+.BUT {
+	margin: 15px 15px 15px 0px;
+}
+
+.wrapperlist {
+	padding: 10px 40px 40px 40px;
+	margin: 0 50px;
+	text-align: center;
+}
+
+.updatebtn {
+	color: #ef9b0f;
+	cursor: pointer;
+	text-align: center;
+}
+
+.deletebtn {
+	color: #ff0000;
+	cursor: pointer;
+	text-align: center;
+}
+
+.but {
+	margin: 15px 15px 15px 0px;
+}
